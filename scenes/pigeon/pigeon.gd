@@ -26,6 +26,7 @@ func _physics_process(_delta: float) -> void:
 			Vector2.UP.rotated(rotation) * 
 			max_speed, acceleration
 		)
+		Global.emit_signal("get_speed", velocity.length())
 	elif velocity.length() < min_speed:
 		velocity = Vector2.UP.rotated(rotation) * min_speed
 		Global.emit_signal("get_speed", velocity.length())
