@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://155xx7s6y6ta"]
 
 [ext_resource type="Texture2D" uid="uid://c34otjgfg0axg" path="res://assets/Physical-World-Map-3360-3655432178.jpg" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://bd4bt1rg8gkjl" path="res://scenes/speed_hud.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://1078q3m6nynj" path="res://scenes/pigeon.tscn" id="2_sugp2"]
 
 [node name="main" type="Node2D" unique_id=665289071]
@@ -8,4 +9,8 @@
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1350927045]
 texture = ExtResource("1_0wfyh")
 
+[node name="SpeedHUD" parent="." unique_id=1818098063 instance=ExtResource("2_jyhfs")]
+
 [node name="Pigeon" parent="." unique_id=2018570939 instance=ExtResource("2_sugp2")]
+drag = null
+angular_speed = null
