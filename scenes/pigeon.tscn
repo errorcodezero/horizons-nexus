@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://1078q3m6nynj"]
+
+[ext_resource type="Script" uid="uid://bo7hr160kaep8" path="res://pigeon.gd" id="1_h0uj3"]
+
+[node name="Pigeon" type="CharacterBody2D" unique_id=2018570939]
+script = ExtResource("1_h0uj3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=219831636]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1325646949]
