@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dnb1a27ipq8sy"]
+
+[ext_resource type="Texture2D" uid="uid://dgtghg85y8wqv" path="res://assets/SF.png" id="1_vhy3v"]
+
+[node name="San Francisco" type="Sprite2D" unique_id=1350068862]
+scale = Vector2(2, 2)
+texture = ExtResource("1_vhy3v")
