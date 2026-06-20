@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1078q3m6nynj"]
 
-[ext_resource type="Script" uid="uid://bo7hr160kaep8" path="res://pigeon.gd" id="1_h0uj3"]
+[ext_resource type="Script" uid="uid://bkhmiq3ly7mxs" path="res://scenes/pigeon.gd" id="1_h0uj3"]
 
 [node name="Pigeon" type="CharacterBody2D" unique_id=2018570939]
 script = ExtResource("1_h0uj3")
