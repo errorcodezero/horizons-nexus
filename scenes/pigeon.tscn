@@ -8,3 +8,5 @@ script = ExtResource("1_h0uj3")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=219831636]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1325646949]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2098406741]
