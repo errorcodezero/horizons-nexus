@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://bkhmiq3ly7mxs" path="res://scenes/pigeon/pigeon.gd" id="1_h0uj3"]
 [ext_resource type="Texture2D" uid="uid://b3yp4wtw1c3en" path="res://assets/pigeon-rest.png" id="2_ga46t"]
+[ext_resource type="Script" uid="uid://dtogcjahrfrk5" path="res://scenes/pigeon/spawner.gd" id="3_762vb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jyhfs"]
+radius = 7.0
 
 [node name="Pigeon" type="CharacterBody2D" unique_id=2018570939]
 script = ExtResource("1_h0uj3")
@@ -10,12 +14,17 @@ min_speed = 40
 acceleration = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=219831636]
+position = Vector2(-0.5, 0)
 texture = ExtResource("2_ga46t")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1325646949]
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=1325646949]
+shape = SubResource("CircleShape2D_jyhfs")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2098406741]
 zoom = Vector2(5, 5)
 
 [node name="Timer" type="Timer" parent="." unique_id=2008536197]
 one_shot = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=1461187715]
+script = ExtResource("3_762vb")

@@ -8,16 +8,19 @@ extends CharacterBody2D
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var timer: Timer
+@onready var spawner: Node2D = $Spawner
+
 
 var input_linear: float
 var input_angular: float
 
-
-
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("Action"):
+		spawner.dropBomb(preload("res://scenes/pigeon/dropping.tscn"))
 
 func _physics_process(_delta: float) -> void:
-	var input_linear: float = Input.get_axis("Slow Down", "Speed Up")
-	var input_angular: float = Input.get_axis("Turn Left", "Turn Right")
+	input_linear = Input.get_axis("Slow Down", "Speed Up")
+	input_angular = Input.get_axis("Turn Left", "Turn Right")
 
 	rotate(input_angular * angular_speed)
 
@@ -26,11 +29,12 @@ func _physics_process(_delta: float) -> void:
 			Vector2.UP.rotated(rotation) * 
 			max_speed, acceleration
 		)
+		Global.emit_signal("get_speed", velocity.length())
 	elif velocity.length() < min_speed:
 		velocity = Vector2.UP.rotated(rotation) * min_speed
 		Global.emit_signal("get_speed", velocity.length())
 	elif input_linear == -1:
-		velocity = velocity.move_toward(Vector2.ZERO, drag*2)
+		velocity = velocity.move_toward(Vector2.ZERO, drag * 2)
 		Global.emit_signal("get_speed", velocity.length())
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, drag)

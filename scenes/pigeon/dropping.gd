@@ -9,7 +9,6 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	hitbox.get_child(0).disabled = true
-	drop()
 	
 func drop() -> void:
 	timer.start()

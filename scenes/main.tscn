@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://155xx7s6y6ta"]
 
-[ext_resource type="PackedScene" uid="uid://dnb1a27ipq8sy" path="res://scenes/citys/san_francisco.tscn" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://dnb1a27ipq8sy" path="res://scenes/cities/san_francisco.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bd4bt1rg8gkjl" path="res://scenes/speed_hud.tscn" id="2_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://1078q3m6nynj" path="res://scenes/pigeon(Archived).tscn" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bckcgnniowsvd" path="res://scenes/pigeon/pigeon.tscn" id="2_sugp2"]
 
 [node name="main" type="Node2D" unique_id=665289071]
 
@@ -13,4 +13,5 @@
 [node name="SpeedHUD" parent="." unique_id=1818098063 instance=ExtResource("2_jyhfs")]
 
 [node name="Pigeon" parent="." unique_id=2018570939 instance=ExtResource("2_sugp2")]
-min_speed = 40
+drag = null
+angular_speed = null

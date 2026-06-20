@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://c6jmm46m0u3mc" path="res://scenes/global.gd" id="1_4pk28"]
 
-[node name="global" type="Node" unique_id=630545905]
+[node name="Global" type="Node" unique_id=630545905]
 script = ExtResource("1_4pk28")
