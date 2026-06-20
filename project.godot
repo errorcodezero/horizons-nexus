@@ -14,6 +14,10 @@ config/name="Needs Name"
 run/main_scene="uid://155xx7s6y6ta"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+Global="*uid://cchjffxr7qrg6"
+
 [display]
 
 window/stretch/mode="canvas_items"
