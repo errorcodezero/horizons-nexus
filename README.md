@@ -9,6 +9,6 @@ Here's your targets:
 - Operation Crux: Bomb Sydney, Australia
 - Operation Arcana: Bomb Singapore, Singapore
 - Operation Polaris: Bomb Toronto, Canada
-- Bonus: Operation Sol: Bomb Bogota, Colombia
+- Bonus: Operation Sol: Bomb Bogotá, Colombia
 
 
