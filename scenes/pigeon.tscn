@@ -5,6 +5,9 @@
 
 [node name="Pigeon" type="CharacterBody2D" unique_id=2018570939]
 script = ExtResource("1_h0uj3")
+max_speed = 500
+min_speed = 40
+acceleration = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=219831636]
 texture = ExtResource("2_ga46t")

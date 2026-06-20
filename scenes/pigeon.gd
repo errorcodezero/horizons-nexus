@@ -1,35 +1,24 @@
 extends CharacterBody2D
 
-@export var linear_acceleration: int = 2
+@export var max_speed: int = 150
+@export var min_speed: int = 10
+@export var acceleration: int = 20
+@export var drag: int = 2
 @export var angular_speed: float = PI/36
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
-const JUMP_VELOCITY = -400.0
-
 func _physics_process(delta: float) -> void:
-	var angle: float = PI/2;
+	var input_linear: float = Input.get_axis("Slow Down", "Speed Up")
+	var input_angular: float = Input.get_axis("Turn Left", "Turn Right")
 
-	# Get the input linear_direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction: Vector2 = Vector2.ZERO;
-	var input_linear_direction: float = Input.get_axis("Speed Up", "Slow Down")
-	var angular_direction: float = Input.get_axis("Turn Left", "Turn Right")
+	rotate(input_angular * angular_speed)
 
-	direction.y = input_linear_direction * sin(angular_direction)
-	direction.x = input_linear_direction * cos(angular_direction)
-
-
-	if direction:
-		velocity += direction;
+	if input_linear > 0:
+		var forward = Vector2.UP.rotated(rotation)
+		velocity = velocity.move_toward(forward * max_speed, acceleration)
+	elif velocity.length() < min_speed:
+		velocity = Vector2.UP.rotated(rotation) * min_speed
 	else:
-		velocity.y = move_toward(velocity.y, 0, linear_acceleration)
-		velocity.x = move_toward(velocity.x, 0, linear_acceleration)
-
-		
-	if angular_direction:
-		
-		rotate(angular_speed * angular_direction)
-	else:
-		rotate(0)
+		velocity = velocity.move_toward(Vector2.ZERO, drag)
 
 	move_and_slide()
