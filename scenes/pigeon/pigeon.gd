@@ -3,8 +3,8 @@ extends CharacterBody2D
 @export var max_speed: int = 150
 @export var min_speed: int = 20
 @export var acceleration: int = 20
-@export var drag: int = 2D
-@export var angular_speed: float = PI/36D
+@export var drag: int = 2
+@export var angular_speed: float = PI/36
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var timer: Timer
