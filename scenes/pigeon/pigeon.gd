@@ -39,5 +39,5 @@ func _physics_process(_delta: float) -> void:
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, drag)
 		Global.emit_signal("get_speed", velocity.length())
-
+ 
 	move_and_slide()
