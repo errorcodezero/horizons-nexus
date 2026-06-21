@@ -5,6 +5,17 @@
 [ext_resource type="PackedScene" uid="uid://cpx43v5djkg2b" path="res://scenes/pigeon/enemy.tscn" id="2_tefeu"]
 [ext_resource type="PackedScene" uid="uid://bckcgnniowsvd" path="res://scenes/pigeon/pigeon.tscn" id="3_sugp2"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jo2o2"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o4kd6"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_85ybf"]
+normal = Vector2(0, 1)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t8def"]
+
 [node name="main" type="Node2D" unique_id=665289071]
 
 [node name="city" type="Node2D" parent="." unique_id=1402288511]
@@ -13,9 +24,42 @@
 
 [node name="enemies" type="Node2D" parent="city" unique_id=1255476324]
 
-[node name="Enemy" parent="city/enemies" unique_id=2018570939 instance=ExtResource("2_tefeu")]
+[node name="Enemy" parent="city/enemies" unique_id=2018570939 node_paths=PackedStringArray("target") instance=ExtResource("2_tefeu")]
+position = Vector2(80, -88)
+speed = 60.0
+target = NodePath("../../../Pigeon")
+
+[node name="Enemy2" parent="city/enemies" unique_id=1146461564 node_paths=PackedStringArray("target") instance=ExtResource("2_tefeu")]
+position = Vector2(-72, 72)
+speed = 60.0
+target = NodePath("../../../Pigeon")
+
+[node name="Enemy3" parent="city/enemies" unique_id=1310940416 node_paths=PackedStringArray("target") instance=ExtResource("2_tefeu")]
+position = Vector2(-104, -56)
+speed = 60.0
+target = NodePath("../../../Pigeon")
 
 [node name="SpeedHUD" parent="." unique_id=1818098063 instance=ExtResource("2_jyhfs")]
 layer = 0
 
 [node name="Pigeon" parent="." unique_id=1173295572 instance=ExtResource("3_sugp2")]
+
+[node name="Node2D" type="StaticBody2D" parent="." unique_id=1920645097]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=479481945]
+position = Vector2(-400, 0)
+shape = SubResource("WorldBoundaryShape2D_jo2o2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D" unique_id=827336415]
+position = Vector2(400, 0)
+shape = SubResource("WorldBoundaryShape2D_o4kd6")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D" unique_id=791746461]
+position = Vector2(0, -400)
+shape = SubResource("WorldBoundaryShape2D_85ybf")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D" unique_id=1976992711]
+position = Vector2(0, 400)
+shape = SubResource("WorldBoundaryShape2D_t8def")

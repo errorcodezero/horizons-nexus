@@ -40,6 +40,7 @@ animations = [{
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_fwkvd")
+speed = 80.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=373345682]
 shape = SubResource("CircleShape2D_jo2o2")
@@ -49,7 +50,6 @@ sprite_frames = SubResource("SpriteFrames_towf2")
 frame_progress = 0.15337828
 
 [node name="Hitbox" parent="." unique_id=580185628 instance=ExtResource("3_pswid")]
-collision_mask = 2
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1659492399]
 
