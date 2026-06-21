@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://brs8sii4cws3j"]
+
+[ext_resource type="Texture2D" uid="uid://d07kxum0lk8xn" path="res://assets/card_template.png" id="1_m273a"]
+[ext_resource type="Script" uid="uid://b0f0wluclee80" path="res://scenes/cards/cards.gd" id="2_6k1sf"]
+
+[node name="Cards" type="TextureRect" unique_id=763638295]
+offset_right = 750.0
+offset_bottom = 1050.0
+scale = Vector2(0.128, 0.128)
+texture = ExtResource("1_m273a")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("2_6k1sf")
