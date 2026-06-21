@@ -14,7 +14,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 1500),
 "portrait": "Idle",
-"size": Vector2(422.00037, 681.0001),
+"size": Vector2(422.00027, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_8"]
 },
@@ -26,7 +26,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1480, 1500),
 "portrait": "Idle",
-"size": Vector2(422.00024, 681.0001),
+"size": Vector2(422, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_9"]
 },
@@ -38,7 +38,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2200, 1500),
 "portrait": "default",
-"size": Vector2(416.00427, 681.0001),
+"size": Vector2(416.00342, 681),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -46,7 +46,7 @@ graph_data = {
 "node_index": 3,
 "node_type": "start_node",
 "offset": Vector2(260, 1500),
-"size": Vector2(351.00018, 123),
+"size": Vector2(351.00043, 123),
 "start_id": "BERLIN",
 "to_dialog": "",
 "to_node": ["dialogue_node_7"]
@@ -61,7 +61,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(800, 4560),
 "portrait": "Idle",
-"size": Vector2(422.00006, 681),
+"size": Vector2(422.0004, 681.0005),
 "to_dialog": "",
 "to_node": ["dialogue_node_20"]
 },
@@ -73,7 +73,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1520, 4560),
 "portrait": "Idle",
-"size": Vector2(422, 681),
+"size": Vector2(422, 681.0005),
 "to_dialog": "",
 "to_node": ["dialogue_node_21"]
 },
@@ -85,7 +85,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2220, 4560),
 "portrait": "default",
-"size": Vector2(416.00085, 681),
+"size": Vector2(416.00037, 681.0005),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -93,7 +93,7 @@ graph_data = {
 "node_index": 7,
 "node_type": "start_node",
 "offset": Vector2(280, 4560),
-"size": Vector2(351.00018, 123),
+"size": Vector2(351.0005, 123.00049),
 "start_id": "BOGOTA",
 "to_dialog": "",
 "to_node": ["dialogue_node_19"]
@@ -108,7 +108,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 680),
 "portrait": "Idle",
-"size": Vector2(422.00037, 681.0001),
+"size": Vector2(422.00027, 681.0001),
 "to_dialog": "",
 "to_node": ["dialogue_node_5"]
 },
@@ -120,7 +120,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1500, 680),
 "portrait": "Idle",
-"size": Vector2(422.00024, 681.0001),
+"size": Vector2(422.00012, 681.0001),
 "to_dialog": "",
 "to_node": ["dialogue_node_6"]
 },
@@ -132,7 +132,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, 680),
 "portrait": "default",
-"size": Vector2(416.0033, 693.0001),
+"size": Vector2(416.0017, 693.0001),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -140,10 +140,33 @@ graph_data = {
 "node_index": 2,
 "node_type": "start_node",
 "offset": Vector2(260, 680),
-"size": Vector2(351.0003, 123),
+"size": Vector2(351.00055, 123.00006),
 "start_id": "CAIRO",
 "to_dialog": "",
 "to_node": ["dialogue_node_4"]
+}
+},
+"DEAD": {
+"dialogue_node_22": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "DEAD_DIALOG_22",
+"node_index": 22,
+"node_type": "dialogue_node",
+"offset": Vector2(800, 5280),
+"portrait": "Idle",
+"size": Vector2(422.0004, 681.001),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_8": {
+"node_index": 8,
+"node_type": "start_node",
+"offset": Vector2(180, 5300),
+"size": Vector2(351.00012, 123.00049),
+"start_id": "DEAD",
+"to_dialog": "",
+"to_node": ["dialogue_node_22"]
 }
 },
 "SF": {
@@ -155,7 +178,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(740, -107.25001),
 "portrait": "Idle",
-"size": Vector2(422.0003, 681),
+"size": Vector2(422.0002, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_2"]
 },
@@ -167,7 +190,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1480, -120),
 "portrait": "Idle",
-"size": Vector2(422.0005, 681),
+"size": Vector2(422.00012, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_3"]
 },
@@ -179,7 +202,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, -120),
 "portrait": "default",
-"size": Vector2(416.0033, 681),
+"size": Vector2(416.0017, 681),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -187,7 +210,7 @@ graph_data = {
 "node_index": 1,
 "node_type": "start_node",
 "offset": Vector2(260, -100),
-"size": Vector2(351.00018, 123),
+"size": Vector2(351.00043, 123),
 "start_id": "SF",
 "to_dialog": "",
 "to_node": ["dialogue_node_1"]
@@ -202,7 +225,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 3000),
 "portrait": "Idle",
-"size": Vector2(422.00037, 681),
+"size": Vector2(422.00027, 681.0012),
 "to_dialog": "",
 "to_node": ["dialogue_node_14"]
 },
@@ -214,7 +237,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1500, 3000),
 "portrait": "Idle",
-"size": Vector2(422.00024, 681),
+"size": Vector2(422.00012, 681.0012),
 "to_dialog": "",
 "to_node": ["dialogue_node_15"]
 },
@@ -226,7 +249,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2220, 3000),
 "portrait": "default",
-"size": Vector2(416.00183, 681),
+"size": Vector2(416.00134, 681.0012),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -234,7 +257,7 @@ graph_data = {
 "node_index": 5,
 "node_type": "start_node",
 "offset": Vector2(260, 3000),
-"size": Vector2(351.00006, 123),
+"size": Vector2(351.0003, 123.000244),
 "start_id": "SINGAPORE",
 "to_dialog": "",
 "to_node": ["dialogue_node_13"]
@@ -249,7 +272,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 2280),
 "portrait": "Idle",
-"size": Vector2(422.00037, 681),
+"size": Vector2(422.00027, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_11"]
 },
@@ -261,7 +284,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1500, 2280),
 "portrait": "Idle",
-"size": Vector2(422.00024, 681),
+"size": Vector2(422.00012, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_12"]
 },
@@ -273,7 +296,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2220, 2280),
 "portrait": "default",
-"size": Vector2(416.0033, 681),
+"size": Vector2(416.0028, 681),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -281,7 +304,7 @@ graph_data = {
 "node_index": 4,
 "node_type": "start_node",
 "offset": Vector2(260, 2280),
-"size": Vector2(351.00018, 123),
+"size": Vector2(351.00043, 123),
 "start_id": "SYDNEY",
 "to_dialog": "",
 "to_node": ["dialogue_node_10"]
@@ -296,7 +319,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(780, 3760),
 "portrait": "Idle",
-"size": Vector2(422.00037, 681),
+"size": Vector2(422.00034, 681.00024),
 "to_dialog": "",
 "to_node": ["dialogue_node_17"]
 },
@@ -308,7 +331,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1520, 3760),
 "portrait": "Idle",
-"size": Vector2(422, 681),
+"size": Vector2(422, 681.00024),
 "to_dialog": "",
 "to_node": ["dialogue_node_18"]
 },
@@ -320,7 +343,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2220, 3760),
 "portrait": "default",
-"size": Vector2(416.00183, 681),
+"size": Vector2(416.00134, 681.00024),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -328,7 +351,7 @@ graph_data = {
 "node_index": 6,
 "node_type": "start_node",
 "offset": Vector2(280, 3760),
-"size": Vector2(351.00006, 123),
+"size": Vector2(351.00037, 123.00049),
 "start_id": "TORONTO",
 "to_dialog": "",
 "to_node": ["dialogue_node_16"]
@@ -372,12 +395,16 @@ dialogs = {
 "default": "هناك شيء يلوح في الأفق",
 "en": ""
 },
+"DEAD_DIALOG_22": {
+"default": "Fighter! You died! How could you let me down? I guess the enemy was much stronger than we thought. We will never give up the fight, and we will remember you fondly.",
+"en": ""
+},
 "SF_DIALOG_1": {
 "default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
 "en": ""
 },
 "SF_DIALOG_2": {
-"default": "Flock Fighter, look at that skyline. Smog, exhaust, Waymos, AI Ads... it’s a gray nightmare. You're diving straight through the fog for this one. Line up your crosshairs right over the [color=c0362d]Golden Gate Bridge[/color] and make it count.",
+"default": "Flock Fighter, look at that skyline. Smog, exhaust, Waymos, AI Ads... it’s a gray nightmare. You're diving straight through the fog for this one. Line up your crosshairs right over the [color=c0362d]Golden Gate Bridge[/color] and make it count. Use [color=358fd7ff]WASD[/color] or the [color=358fd7ff]arrow keys[/color] to move, and use [color=358fd7ff]SPACE[/color] to drop bombs. Also make sure to hit the [color=358fd7ff]shift[/color] key for a speed boost you're going to need to get away from the humans.",
 "en": ""
 },
 "SF_DIALOG_3": {
@@ -433,6 +460,9 @@ characters = {
 "CAIRO": {
 "General Greg": 3978483301354737234,
 "Random Guy": 2515394185694124763
+},
+"DEAD": {
+"General Greg": 3978483301354737234
 },
 "SF": {
 "General Greg": 3978483301354737234,
