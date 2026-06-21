@@ -15,6 +15,8 @@ var time: float = 0.0
 
 
 func _physics_process(delta: float) -> void:
+	if !Global.game_start:
+		return
 	if target == null:
 		return
 

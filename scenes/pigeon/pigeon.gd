@@ -15,6 +15,8 @@ var input_linear: float
 var input_angular: float
 
 func _unhandled_input(event: InputEvent) -> void:
+	if !Global.game_start:
+		return
 	if event.is_action_pressed("Action"):
 		if cooldown.is_stopped():
 			spawner.dropWeapon(preload("res://scenes/pigeon/components/dropping.tscn"))
@@ -47,6 +49,5 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 func _on_hitbox_hit(damage: int) -> void:
-	print("something")
 	if health.takeDamage(damage) == 0:
-		print("death")
+		Global.emit_signal("death")
