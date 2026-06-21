@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dqaf0cbeh1w4b"]
+
+[ext_resource type="Script" uid="uid://jre8yrwnppcx" path="res://scenes/cities/building.gd" id="1_3yp8o"]
+[ext_resource type="Texture2D" uid="uid://58eiplcnr81k" path="res://assets/building1.png" id="2_82mli"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qynm2"]
+size = Vector2(16, 32)
+
+[node name="Building" type="Area2D" unique_id=440431100]
+collision_layer = 2
+monitorable = true
+script = ExtResource("1_3yp8o")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2035367530]
+texture = ExtResource("2_82mli")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=886184171]
+shape = SubResource("RectangleShape2D_qynm2")

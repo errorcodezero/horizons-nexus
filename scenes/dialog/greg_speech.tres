@@ -14,7 +14,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 1500),
 "portrait": "Idle",
-"size": Vector2(422.00058, 681.0006),
+"size": Vector2(422.0002, 681.0006),
 "to_dialog": "",
 "to_node": ["dialogue_node_8"]
 },
@@ -26,7 +26,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1480, 1500),
 "portrait": "Idle",
-"size": Vector2(422.00012, 681.00037),
+"size": Vector2(422.0003, 681.0006),
 "to_dialog": "",
 "to_node": ["dialogue_node_9"]
 },
@@ -38,7 +38,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2200, 1500),
 "portrait": "default",
-"size": Vector2(416.00012, 681.00037),
+"size": Vector2(416.00244, 681.0006),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -46,10 +46,57 @@ graph_data = {
 "node_index": 3,
 "node_type": "start_node",
 "offset": Vector2(260, 1500),
-"size": Vector2(351, 123.00012),
+"size": Vector2(351.0003, 123.00049),
 "start_id": "BERLIN",
 "to_dialog": "",
 "to_node": ["dialogue_node_7"]
+}
+},
+"BOGOTA": {
+"dialogue_node_19": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "BOGOTA_DIALOG_19",
+"node_index": 19,
+"node_type": "dialogue_node",
+"offset": Vector2(800, 4560),
+"portrait": "Idle",
+"size": Vector2(422, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_20"]
+},
+"dialogue_node_20": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "BOGOTA_DIALOG_20",
+"node_index": 20,
+"node_type": "dialogue_node",
+"offset": Vector2(1520, 4560),
+"portrait": "Idle",
+"size": Vector2(422.00006, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_21"]
+},
+"dialogue_node_21": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "BOGOTA_DIALOG_21",
+"node_index": 21,
+"node_type": "dialogue_node",
+"offset": Vector2(2220, 4560),
+"portrait": "default",
+"size": Vector2(416.00012, 632),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_7": {
+"node_index": 7,
+"node_type": "start_node",
+"offset": Vector2(280, 4560),
+"size": Vector2(351.00024, 123),
+"start_id": "BOGOTA",
+"to_dialog": "",
+"to_node": ["dialogue_node_19"]
 }
 },
 "CAIRO": {
@@ -61,7 +108,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 680),
 "portrait": "Idle",
-"size": Vector2(422.00034, 681.0008),
+"size": Vector2(422.0002, 681.00073),
 "to_dialog": "",
 "to_node": ["dialogue_node_5"]
 },
@@ -73,7 +120,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1500, 680),
 "portrait": "Idle",
-"size": Vector2(422.00098, 681.0008),
+"size": Vector2(422.00018, 681.00073),
 "to_dialog": "",
 "to_node": ["dialogue_node_6"]
 },
@@ -85,15 +132,15 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, 680),
 "portrait": "default",
-"size": Vector2(416.0011, 640.0008),
+"size": Vector2(416.0016, 640.0012),
 "to_dialog": "",
 "to_node": ["END"]
 },
 "start_node_2": {
 "node_index": 2,
 "node_type": "start_node",
-"offset": Vector2(255.60158, 695.2276),
-"size": Vector2(351.00012, 123.00049),
+"offset": Vector2(260, 680),
+"size": Vector2(351.00043, 123.00049),
 "start_id": "CAIRO",
 "to_dialog": "",
 "to_node": ["dialogue_node_4"]
@@ -108,7 +155,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(740, -107.25001),
 "portrait": "Idle",
-"size": Vector2(422.00046, 681),
+"size": Vector2(422.0001, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_2"]
 },
@@ -120,7 +167,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1480, -120),
 "portrait": "Idle",
-"size": Vector2(422.0033, 681),
+"size": Vector2(422.00055, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_3"]
 },
@@ -132,18 +179,159 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, -120),
 "portrait": "default",
-"size": Vector2(416.00183, 681),
+"size": Vector2(416.0016, 681),
 "to_dialog": "",
 "to_node": ["END"]
 },
 "start_node_1": {
 "node_index": 1,
 "node_type": "start_node",
-"offset": Vector2(260, -40),
-"size": Vector2(351, 123.00008),
+"offset": Vector2(260, -100),
+"size": Vector2(351.0003, 123),
 "start_id": "SF",
 "to_dialog": "",
 "to_node": ["dialogue_node_1"]
+}
+},
+"SINGAPORE": {
+"dialogue_node_13": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "SINGAPORE_DIALOG_13",
+"node_index": 13,
+"node_type": "dialogue_node",
+"offset": Vector2(760, 3000),
+"portrait": "Idle",
+"size": Vector2(422.0002, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_14"]
+},
+"dialogue_node_14": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "SINGAPORE_DIALOG_14",
+"node_index": 14,
+"node_type": "dialogue_node",
+"offset": Vector2(1500, 3000),
+"portrait": "Idle",
+"size": Vector2(422.00018, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_15"]
+},
+"dialogue_node_15": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "SINGAPORE_DIALOG_15",
+"node_index": 15,
+"node_type": "dialogue_node",
+"offset": Vector2(2220, 3000),
+"portrait": "default",
+"size": Vector2(416.00085, 681),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_5": {
+"node_index": 5,
+"node_type": "start_node",
+"offset": Vector2(260, 3000),
+"size": Vector2(351.00018, 123),
+"start_id": "SINGAPORE",
+"to_dialog": "",
+"to_node": ["dialogue_node_13"]
+}
+},
+"SYDNEY": {
+"dialogue_node_10": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "SYDNEY_DIALOG_10",
+"node_index": 10,
+"node_type": "dialogue_node",
+"offset": Vector2(760, 2280),
+"portrait": "Idle",
+"size": Vector2(422.0002, 681.0016),
+"to_dialog": "",
+"to_node": ["dialogue_node_11"]
+},
+"dialogue_node_11": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "SYDNEY_DIALOG_11",
+"node_index": 11,
+"node_type": "dialogue_node",
+"offset": Vector2(1500, 2280),
+"portrait": "Idle",
+"size": Vector2(422.00018, 681.0016),
+"to_dialog": "",
+"to_node": ["dialogue_node_12"]
+},
+"dialogue_node_12": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "SYDNEY_DIALOG_12",
+"node_index": 12,
+"node_type": "dialogue_node",
+"offset": Vector2(2220, 2280),
+"portrait": "default",
+"size": Vector2(416.00232, 681.0016),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_4": {
+"node_index": 4,
+"node_type": "start_node",
+"offset": Vector2(260, 2280),
+"size": Vector2(351.0003, 123.00037),
+"start_id": "SYDNEY",
+"to_dialog": "",
+"to_node": ["dialogue_node_10"]
+}
+},
+"TORONTO": {
+"dialogue_node_16": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "TORONTO_DIALOG_16",
+"node_index": 16,
+"node_type": "dialogue_node",
+"offset": Vector2(780, 3760),
+"portrait": "Idle",
+"size": Vector2(422.00015, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_17"]
+},
+"dialogue_node_17": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "TORONTO_DIALOG_17",
+"node_index": 17,
+"node_type": "dialogue_node",
+"offset": Vector2(1520, 3760),
+"portrait": "Idle",
+"size": Vector2(422.00006, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_18"]
+},
+"dialogue_node_18": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "TORONTO_DIALOG_18",
+"node_index": 18,
+"node_type": "dialogue_node",
+"offset": Vector2(2220, 3760),
+"portrait": "default",
+"size": Vector2(416.00085, 681),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_6": {
+"node_index": 6,
+"node_type": "start_node",
+"offset": Vector2(280, 3760),
+"size": Vector2(351.00012, 123),
+"start_id": "TORONTO",
+"to_dialog": "",
+"to_node": ["dialogue_node_16"]
 }
 }
 }
@@ -158,6 +346,18 @@ dialogs = {
 },
 "BERLIN_DIALOG_9": {
 "default": "Schau! Da zeichnet sich etwas am Horizont ab.",
+"en": ""
+},
+"BOGOTA_DIALOG_19": {
+"default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
+"en": ""
+},
+"BOGOTA_DIALOG_20": {
+"default": "A high-altitude bonus mission for the bravest bird in the skies. Bogotá is nestled right in the Andes. It's perfect cover for a surprise drop. Let's paint the town white.",
+"en": ""
+},
+"BOGOTA_DIALOG_21": {
+"default": "¡Mira! Hay algo en el horizonte.",
 "en": ""
 },
 "CAIRO_DIALOG_4": {
@@ -183,10 +383,50 @@ dialogs = {
 "SF_DIALOG_3": {
 "default": "Hey, check it out... there's something on the horizon.",
 "en": ""
+},
+"SINGAPORE_DIALOG_13": {
+"default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
+"en": ""
+},
+"SINGAPORE_DIALOG_14": {
+"default": "Singapore is one of the greenest cities on earth, but they're still humans, and they still pollute. We need total destruction of Marina Bay and beyond. Do not fail me.",
+"en": ""
+},
+"SINGAPORE_DIALOG_15": {
+"default": "Singapore is one of the greenest cities on earth, but they're still humans, and they still pollute. We need total saturation over Marina Bay. Keep your feathers dry, because 'தொடுவானத்தில் ஏதோ ஒன்று தெரிகிறது' (Something is visible on the horizon). Do not fail me.",
+"en": ""
+},
+"SYDNEY_DIALOG_10": {
+"default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
+"en": ""
+},
+"SYDNEY_DIALOG_11": {
+"default": "We’re heading down under, wing-brother. Gravity feels a bit different when you're flying inverted, but your aim better stay true. Let's give the folks down by the Opera House something to look up at.",
+"en": ""
+},
+"SYDNEY_DIALOG_12": {
+"default": "˙uozıɹoɥ ǝɥʇ uo ƃuıɥʇǝɯos s,ǝɹǝɥʇ ¡ʞool",
+"en": ""
+},
+"TORONTO_DIALOG_16": {
+"default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
+"en": ""
+},
+"TORONTO_DIALOG_17": {
+"default": "It’s freezing up north, soldier, so make sure your wings don't icing up. We're targeting the CN Tower. They're going to be apologizing to each other for weeks after we're done.",
+"en": ""
+},
+"TORONTO_DIALOG_18": {
+"default": "Look! There's something on the horizon, ay",
+"en": ""
 }
 }
 characters = {
 "BERLIN": {
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
+},
+"BOGOTA": {
 "General Greg": 3978483301354737234,
 "Random Guy": 2515394185694124763
 },
@@ -195,6 +435,18 @@ characters = {
 "Random Guy": 2515394185694124763
 },
 "SF": {
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
+},
+"SINGAPORE": {
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
+},
+"SYDNEY": {
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
+},
+"TORONTO": {
 "General Greg": 3978483301354737234,
 "Random Guy": 2515394185694124763
 }

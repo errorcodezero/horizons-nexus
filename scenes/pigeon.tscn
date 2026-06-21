@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://6su8g88osih6"]
+
+[ext_resource type="Texture2D" uid="uid://b3yp4wtw1c3en" path="res://assets/pigeon-rest.png" id="2_ga46t"]
+
+[node name="Pigeon" type="CharacterBody2D" unique_id=2018570939]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=219831636]
+texture = ExtResource("2_ga46t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1325646949]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2098406741]
+zoom = Vector2(5, 5)
+
+[node name="Timer" type="Timer" parent="." unique_id=2008536197]
+one_shot = true

@@ -4,8 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bd4bt1rg8gkjl" path="res://scenes/speed_hud.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://cpx43v5djkg2b" path="res://scenes/pigeon/enemy.tscn" id="2_tefeu"]
 [ext_resource type="PackedScene" uid="uid://bckcgnniowsvd" path="res://scenes/pigeon/pigeon.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://bht8rjss5tv6h" path="res://scenes/cards/card_holder.tscn" id="4_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://brs8sii4cws3j" path="res://scenes/cards/cards.tscn" id="4_tbgi4"]
 
 [sub_resource type="Curve" id="Curve_tbgi4"]
 _limits = [-1.0, 0.0, 0.0, 1.0]
@@ -17,7 +15,6 @@ point_count = 3
 [node name="city" type="Node2D" parent="." unique_id=1402288511]
 
 [node name="San Francisco" parent="city" unique_id=1350068862 instance=ExtResource("1_0wfyh")]
-z_index = -2
 
 [node name="enemies" type="Node2D" parent="city" unique_id=1255476324]
 
@@ -26,6 +23,7 @@ z_index = -2
 [node name="SpeedHUD" parent="." unique_id=1818098063 instance=ExtResource("2_jyhfs")]
 layer = 0
 
+<<<<<<< HEAD
 [node name="cardHolder" parent="SpeedHUD" unique_id=2080382256 instance=ExtResource("4_jyhfs")]
 visible = false
 anchors_preset = 8
@@ -50,3 +48,7 @@ z_index = 3
 [node name="Cards5" parent="SpeedHUD/cardHolder" unique_id=1895250932 instance=ExtResource("4_tbgi4")]
 
 [node name="Pigeon" parent="." unique_id=850462189 instance=ExtResource("3_sugp2")]
+=======
+[node name="Pigeon" parent="." unique_id=2018570939 instance=ExtResource("3_sugp2")]
+z_index = 1
+>>>>>>> f1a7909239d8cc5214ce567f96a771038d0f7c9d
