@@ -1,2 +1,2 @@
 class_name CardBody
-extends TextureRect
+extends Sprite2D

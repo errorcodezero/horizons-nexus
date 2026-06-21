@@ -10,7 +10,6 @@ extends CharacterBody2D
 @onready var cooldown: Timer = $Cooldown
 @onready var spawner: Node2D = $Spawner
 
-
 var input_linear: float
 var input_angular: float
 

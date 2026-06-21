@@ -11,6 +11,7 @@
 [node name="city" type="Node2D" parent="." unique_id=1402288511]
 
 [node name="San Francisco" parent="city" unique_id=1350068862 instance=ExtResource("1_0wfyh")]
+z_index = -2
 
 [node name="SpeedHUD" parent="." unique_id=1818098063 instance=ExtResource("2_jyhfs")]
 
@@ -24,25 +25,20 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Cards" parent="SpeedHUD/cardHolder" unique_id=1942821490 instance=ExtResource("4_tbgi4")]
-layout_mode = 0
+layout_mode = 1
 
-[node name="Cards2" parent="SpeedHUD/cardHolder" unique_id=1939541485 instance=ExtResource("4_tbgi4")]
-layout_mode = 0
+[node name="Cards2" parent="SpeedHUD/cardHolder" unique_id=763638295 instance=ExtResource("4_tbgi4")]
+layout_mode = 1
 
-[node name="Cards3" parent="SpeedHUD/cardHolder" unique_id=763638295 instance=ExtResource("4_tbgi4")]
-layout_mode = 0
+[node name="Cards3" parent="SpeedHUD/cardHolder" unique_id=1107575124 instance=ExtResource("4_tbgi4")]
+layout_mode = 1
 
-[node name="Cards4" parent="SpeedHUD/cardHolder" unique_id=1482633079 instance=ExtResource("4_tbgi4")]
+[node name="Cards4" parent="SpeedHUD/cardHolder" unique_id=1083686272 instance=ExtResource("4_tbgi4")]
 layout_mode = 0
+anchors_preset = 0
 
-[node name="Cards5" parent="SpeedHUD/cardHolder" unique_id=1007668231 instance=ExtResource("4_tbgi4")]
+[node name="Cards5" parent="SpeedHUD/cardHolder" unique_id=1895250932 instance=ExtResource("4_tbgi4")]
 layout_mode = 0
-offset_left = -576.0
-offset_top = -324.0
-offset_right = 174.0
-offset_bottom = 726.0
-
-[node name="Cards6" parent="SpeedHUD/cardHolder" unique_id=1838298534 instance=ExtResource("4_tbgi4")]
-layout_mode = 0
+anchors_preset = 0
 
 [node name="Pigeon" parent="." unique_id=2018570939 instance=ExtResource("3_sugp2")]

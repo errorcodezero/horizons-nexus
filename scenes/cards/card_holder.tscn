@@ -2,12 +2,6 @@
 
 [ext_resource type="Script" uid="uid://ddvbvmf8tyoq7" path="res://scenes/cards/card_holder.gd" id="1_rdri3"]
 
-[sub_resource type="Curve" id="Curve_rdri3"]
-_limits = [-1.0, 1.0, 0.0, 1.0]
-_data = [Vector2(0, -1), 0.0, 2.0100503, 0, 0, Vector2(1, 1), 1.9356993, 0.0, 0, 0]
-point_count = 2
-metadata/_snap_enabled = true
-
 [sub_resource type="Curve" id="Curve_507wa"]
 _limits = [-1.0, 0.0, 0.0, 1.0]
 _data = [Vector2(0, -1), 0.0, 0.0, 0, 0, Vector2(0.5, 0), 0.0, 0.0, 0, 0, Vector2(1, -1), 0.0, 0.0, 0, 0]
@@ -17,9 +11,7 @@ point_count = 3
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_rdri3")
-spacingCurve = SubResource("Curve_rdri3")
 liftCurve = SubResource("Curve_507wa")
 
 [connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
 [connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]
-[connection signal="child_order_changed" from="." to="." method="_on_child_order_changed"]
