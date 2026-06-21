@@ -47,22 +47,22 @@ layer = 0
 
 [node name="Pigeon" parent="." unique_id=1173295572 instance=ExtResource("3_sugp2")]
 
-[node name="Node2D" type="StaticBody2D" parent="." unique_id=1920645097]
+[node name="Node2D2" type="StaticBody2D" parent="." unique_id=1920645097]
 collision_layer = 16
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=479481945]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2" unique_id=479481945]
 position = Vector2(-400, 0)
 shape = SubResource("WorldBoundaryShape2D_jo2o2")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D" unique_id=827336415]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D2" unique_id=827336415]
 position = Vector2(400, 0)
 shape = SubResource("WorldBoundaryShape2D_o4kd6")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D" unique_id=791746461]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D2" unique_id=791746461]
 position = Vector2(0, -400)
 shape = SubResource("WorldBoundaryShape2D_85ybf")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D" unique_id=1976992711]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D2" unique_id=1976992711]
 position = Vector2(0, 400)
 shape = SubResource("WorldBoundaryShape2D_t8def")
