@@ -3,42 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://dnb1a27ipq8sy" path="res://scenes/cities/san_francisco.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bd4bt1rg8gkjl" path="res://scenes/speed_hud.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bckcgnniowsvd" path="res://scenes/pigeon/pigeon.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://bht8rjss5tv6h" path="res://scenes/cards/card_holder.tscn" id="4_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://brs8sii4cws3j" path="res://scenes/cards/cards.tscn" id="4_tbgi4"]
 
 [node name="main" type="Node2D" unique_id=665289071]
 
 [node name="city" type="Node2D" parent="." unique_id=1402288511]
 
 [node name="San Francisco" parent="city" unique_id=1350068862 instance=ExtResource("1_0wfyh")]
-z_index = -2
 
 [node name="SpeedHUD" parent="." unique_id=1818098063 instance=ExtResource("2_jyhfs")]
 
-[node name="cardHolder" parent="SpeedHUD" unique_id=2080382256 instance=ExtResource("4_jyhfs")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Cards" parent="SpeedHUD/cardHolder" unique_id=1942821490 instance=ExtResource("4_tbgi4")]
-layout_mode = 1
-
-[node name="Cards2" parent="SpeedHUD/cardHolder" unique_id=763638295 instance=ExtResource("4_tbgi4")]
-layout_mode = 1
-
-[node name="Cards3" parent="SpeedHUD/cardHolder" unique_id=1107575124 instance=ExtResource("4_tbgi4")]
-layout_mode = 1
-
-[node name="Cards4" parent="SpeedHUD/cardHolder" unique_id=1083686272 instance=ExtResource("4_tbgi4")]
-layout_mode = 0
-anchors_preset = 0
-
-[node name="Cards5" parent="SpeedHUD/cardHolder" unique_id=1895250932 instance=ExtResource("4_tbgi4")]
-layout_mode = 0
-anchors_preset = 0
-
 [node name="Pigeon" parent="." unique_id=2018570939 instance=ExtResource("3_sugp2")]
+z_index = 1

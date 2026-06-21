@@ -1,7 +1,45 @@
 [gd_scene format=3 uid="uid://dnb1a27ipq8sy"]
 
-[ext_resource type="Texture2D" uid="uid://dgtghg85y8wqv" path="res://assets/SF.png" id="1_vhy3v"]
+[ext_resource type="Texture2D" uid="uid://dgtghg85y8wqv" path="res://assets/SF.png" id="1_mu7ix"]
+[ext_resource type="PackedScene" uid="uid://dqaf0cbeh1w4b" path="res://scenes/cities/building.tscn" id="2_4cl2w"]
+[ext_resource type="Texture2D" uid="uid://58eiplcnr81k" path="res://assets/building1.png" id="3_7yqco"]
+[ext_resource type="Texture2D" uid="uid://iula6jgqaepe" path="res://assets/building2.png" id="4_5xcls"]
+[ext_resource type="Texture2D" uid="uid://bvdjqhmhc80vv" path="res://assets/building3.png" id="5_8vn8l"]
 
-[node name="San Francisco" type="Sprite2D" unique_id=1350068862]
+[node name="San Francisco" type="Node2D" unique_id=478754487]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=440655284]
+z_index = -1
+texture = ExtResource("1_mu7ix")
+
+[node name="Building1" parent="." unique_id=1039083788 instance=ExtResource("2_4cl2w")]
+position = Vector2(57.000004, -38)
+scale = Vector2(3, 3)
+building_texture = ExtResource("3_7yqco")
+
+[node name="Building2" parent="." unique_id=1357506125 instance=ExtResource("2_4cl2w")]
+position = Vector2(-4.999999, 86)
+scale = Vector2(2.5, 2.5)
+building_texture = ExtResource("4_5xcls")
+
+[node name="Building3" parent="." unique_id=502639325 instance=ExtResource("2_4cl2w")]
+position = Vector2(-91, 119.00001)
+scale = Vector2(3, 3)
+max_health = 5
+building_texture = ExtResource("5_8vn8l")
+
+[node name="Building4" parent="." unique_id=159253351 instance=ExtResource("2_4cl2w")]
+position = Vector2(84, 142)
 scale = Vector2(2, 2)
-texture = ExtResource("1_vhy3v")
+building_texture = ExtResource("3_7yqco")
+
+[node name="Building5" parent="." unique_id=193413217 instance=ExtResource("2_4cl2w")]
+position = Vector2(-137, 24)
+scale = Vector2(2.5, 2.5)
+building_texture = ExtResource("4_5xcls")
+
+[node name="Building6" parent="." unique_id=731395739 instance=ExtResource("2_4cl2w")]
+position = Vector2(-21, -31)
+scale = Vector2(3, 3)
+max_health = 4
+building_texture = ExtResource("5_8vn8l")

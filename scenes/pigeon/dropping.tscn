@@ -57,6 +57,7 @@ sprite_frames = SubResource("SpriteFrames_jo2o2")
 frame_progress = 0.6045566
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=660172131]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1673890727]
 shape = SubResource("CircleShape2D_o4kd6")
@@ -65,6 +66,6 @@ disabled = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2033609801]
 zoom = Vector2(21.07, 21.07)
 
-[node name="Fall Length" type="Timer" parent="." unique_id=1957222863]
+[node name="FallTimer" type="Timer" parent="." unique_id=1957222863]
 wait_time = 5.0
 one_shot = true
