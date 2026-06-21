@@ -14,7 +14,31 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 1500),
 "portrait": "Idle",
-"size": Vector2(422.00055, 681.0006),
+"size": Vector2(422.00058, 681.0006),
+"to_dialog": "",
+"to_node": ["dialogue_node_8"]
+},
+"dialogue_node_8": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "BERLIN_DIALOG_8",
+"node_index": 8,
+"node_type": "dialogue_node",
+"offset": Vector2(1480, 1500),
+"portrait": "Idle",
+"size": Vector2(422.00012, 681.00037),
+"to_dialog": "",
+"to_node": ["dialogue_node_9"]
+},
+"dialogue_node_9": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "BERLIN_DIALOG_9",
+"node_index": 9,
+"node_type": "dialogue_node",
+"offset": Vector2(2200, 1500),
+"portrait": "default",
+"size": Vector2(416.00012, 681.00037),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -22,7 +46,7 @@ graph_data = {
 "node_index": 3,
 "node_type": "start_node",
 "offset": Vector2(260, 1500),
-"size": Vector2(351, 123),
+"size": Vector2(351, 123.00012),
 "start_id": "BERLIN",
 "to_dialog": "",
 "to_node": ["dialogue_node_7"]
@@ -37,7 +61,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(760, 680),
 "portrait": "Idle",
-"size": Vector2(422.00043, 681.0006),
+"size": Vector2(422.00034, 681.0008),
 "to_dialog": "",
 "to_node": ["dialogue_node_5"]
 },
@@ -49,7 +73,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1500, 680),
 "portrait": "Idle",
-"size": Vector2(422.00153, 681.0006),
+"size": Vector2(422.00098, 681.0008),
 "to_dialog": "",
 "to_node": ["dialogue_node_6"]
 },
@@ -61,7 +85,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, 680),
 "portrait": "default",
-"size": Vector2(416.0006, 640.0005),
+"size": Vector2(416.0011, 640.0008),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -69,7 +93,7 @@ graph_data = {
 "node_index": 2,
 "node_type": "start_node",
 "offset": Vector2(255.60158, 695.2276),
-"size": Vector2(351.00012, 123.000336),
+"size": Vector2(351.00012, 123.00049),
 "start_id": "CAIRO",
 "to_dialog": "",
 "to_node": ["dialogue_node_4"]
@@ -84,7 +108,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(740, -107.25001),
 "portrait": "Idle",
-"size": Vector2(422.00043, 681),
+"size": Vector2(422.00046, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_2"]
 },
@@ -96,7 +120,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1480, -120),
 "portrait": "Idle",
-"size": Vector2(422.00336, 681),
+"size": Vector2(422.0033, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_3"]
 },
@@ -108,7 +132,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, -120),
 "portrait": "default",
-"size": Vector2(416.0011, 681),
+"size": Vector2(416.00183, 681),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -116,7 +140,7 @@ graph_data = {
 "node_index": 1,
 "node_type": "start_node",
 "offset": Vector2(260, -40),
-"size": Vector2(351, 123.00006),
+"size": Vector2(351, 123.00008),
 "start_id": "SF",
 "to_dialog": "",
 "to_node": ["dialogue_node_1"]
@@ -126,6 +150,14 @@ graph_data = {
 dialogs = {
 "BERLIN_DIALOG_7": {
 "default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
+"en": ""
+},
+"BERLIN_DIALOG_8": {
+"default": "The concrete jungle of Berlin is loud, polluted, and ripe for a tactical drop. We're cutting off their industrial momentum right here. Aim for the crowded squares. No mercy.",
+"en": ""
+},
+"BERLIN_DIALOG_9": {
+"default": "Schau! Da zeichnet sich etwas am Horizont ab.",
 "en": ""
 },
 "CAIRO_DIALOG_4": {
@@ -155,7 +187,8 @@ dialogs = {
 }
 characters = {
 "BERLIN": {
-"General Greg": 3978483301354737234
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
 },
 "CAIRO": {
 "General Greg": 3978483301354737234,

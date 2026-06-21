@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ct31x104qh1ex"]
+
+[ext_resource type="Script" uid="uid://bfcg5ew7ehanh" path="res://scenes/dialogManager.gd" id="1_a1d73"]
+[ext_resource type="Resource" uid="uid://qp1saw0krgqd" path="res://scenes/dialog/greg_speech.tres" id="2_ig2x2"]
+
+[node name="Node2D" type="Node2D" unique_id=1491069220]
+script = ExtResource("1_a1d73")
+dialog_data = ExtResource("2_ig2x2")
