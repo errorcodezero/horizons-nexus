@@ -10,7 +10,7 @@ portrait_scene_path = "res://scenes/characters/portrait.tscn"
 export_overrides = {
 "portrait_image": {
 "type": 4,
-"value": "res://assets/human.png"
+"value": "res://assets/charactor/human.png"
 }
 }
 transform_settings = {
