@@ -40,6 +40,9 @@ func _physics_process(delta: float) -> void:
 
 	velocity = velocity.lerp(desired_direction * speed, turn_speed * delta)
 
+	if velocity.length() > 0.1:
+		rotation = velocity.angle() + PI/2
+
 	move_and_slide()
 
 

@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://bthj4r6nnyg7k"]
+
+[ext_resource type="Script" path="res://scenes/game_screens.gd" id="1_j6bvt"]
+[ext_resource type="Texture2D" uid="uid://bwugkaweum2hn" path="res://assets/dystopia.png" id="2_gqj3f"]
+
+[node name="GameScreens" type="CanvasLayer" unique_id=578231826]
+layer = 10
+script = ExtResource("1_j6bvt")
+
+[node name="Background" type="TextureRect" parent="." unique_id=455749622]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gqj3f")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StartScreen" type="Control" parent="." unique_id=1915597887]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="StartScreen" unique_id=1829870230]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -50.0
+offset_right = 200.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 72
+text = "FLOCK FIGHTERS"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="StartScreen" unique_id=1379679602]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 58.0
+offset_right = 200.0
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "Press SPACE to begin"
+horizontal_alignment = 1
+
+[node name="VictoryScreen" type="Control" parent="." unique_id=822679761]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="VictoryScreen" unique_id=1638878558]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 40.0
+offset_right = 200.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 60
+text = "MISSION COMPLETE"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="VictoryScreen" unique_id=1175507265]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 160.0
+offset_right = 200.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="VictoryScreen" unique_id=1900294571]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 220.0
+offset_right = 200.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Press SPACE to restart"
+horizontal_alignment = 1
+
+[node name="DeathScreen" type="Control" parent="." unique_id=1404034584]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="DeathScreen" unique_id=1163989212]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 40.0
+offset_right = 200.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 72
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="DeathScreen" unique_id=1645298089]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 160.0
+offset_right = 200.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="DeathScreen" unique_id=1170100715]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 220.0
+offset_right = 200.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Press SPACE to restart"
+horizontal_alignment = 1

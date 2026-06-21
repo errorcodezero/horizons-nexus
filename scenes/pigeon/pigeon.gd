@@ -18,9 +18,11 @@ func _unhandled_input(event: InputEvent) -> void:
 	if !Global.game_start:
 		return
 	if event.is_action_pressed("Action"):
-		if cooldown.is_stopped():
+		var shift = Input.is_action_pressed("Nitro")
+		if shift or cooldown.is_stopped():
 			spawner.dropWeapon(preload("res://scenes/pigeon/components/dropping.tscn"))
-			cooldown.start()
+			if not shift:
+				cooldown.start()
 
 func _physics_process(_delta: float) -> void:
 	if !Global.game_start:
@@ -31,9 +33,10 @@ func _physics_process(_delta: float) -> void:
 	rotate(input_angular * angular_speed)
 
 	if input_linear > 0:
+		var speed_mult = 1.5 if Input.is_action_pressed("Nitro") else 1.0
 		velocity = velocity.move_toward(
-			Vector2.UP.rotated(rotation) * 
-			max_speed, acceleration
+			Vector2.UP.rotated(rotation) *
+			max_speed * speed_mult, acceleration * speed_mult
 		)
 		Global.emit_signal("get_speed", velocity.length())
 	elif velocity.length() < min_speed:
