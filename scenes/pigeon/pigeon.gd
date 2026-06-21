@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var angular_speed: float = PI/36
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
-@onready var timer: Timer
+@onready var cooldown: Timer = $Cooldown
 @onready var spawner: Node2D = $Spawner
 
 
@@ -16,7 +16,9 @@ var input_angular: float
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("Action"):
-		spawner.dropBomb(preload("res://scenes/pigeon/dropping.tscn"))
+		if cooldown.is_stopped():
+			spawner.dropBomb(preload("res://scenes/pigeon/dropping.tscn"))
+			cooldown.start()
 
 func _physics_process(_delta: float) -> void:
 	input_linear = Input.get_axis("Slow Down", "Speed Up")

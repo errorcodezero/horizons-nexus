@@ -23,7 +23,7 @@ shape = SubResource("CircleShape2D_jyhfs")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2098406741]
 zoom = Vector2(5, 5)
 
-[node name="Timer" type="Timer" parent="." unique_id=2008536197]
+[node name="Cooldown" type="Timer" parent="." unique_id=2008536197]
 one_shot = true
 
 [node name="Spawner" type="Node2D" parent="." unique_id=1461187715]

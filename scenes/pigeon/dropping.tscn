@@ -65,6 +65,6 @@ disabled = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2033609801]
 zoom = Vector2(21.07, 21.07)
 
-[node name="Timer" type="Timer" parent="." unique_id=1957222863]
+[node name="Fall Length" type="Timer" parent="." unique_id=1957222863]
 wait_time = 5.0
 one_shot = true
