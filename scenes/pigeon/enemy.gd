@@ -8,9 +8,9 @@ extends CharacterBody2D
 @export var arc_strength: float = 40.0
 @export var arc_speed: float = 6.0
 @export var turn_speed: float = 5.0
+@export var stop_distance: float = 20.0
 
 var time: float = 0.0
-
 @export var target: Node2D
 
 
@@ -20,15 +20,21 @@ func _physics_process(delta: float) -> void:
 
 	time += delta
 
-	var to_target: Vector2 = (target.global_position - global_position).normalized()
+	var to_target: Vector2 = target.global_position - global_position
+	var dist := to_target.length()
 
-	var perpendicular: Vector2 = Vector2(-to_target.y, to_target.x)
+	# ✅ STOP BEFORE CONTACT
+	if dist < stop_distance:
+		velocity = velocity.lerp(Vector2.ZERO, turn_speed * delta)
+		move_and_slide()
+		return
 
-	var arc_offset: Vector2 = perpendicular * sin(time * arc_speed) * arc_strength
+	var dir := to_target.normalized()
 
-	var desired_direction: Vector2 = (to_target + arc_offset * 0.01).normalized()
+	var perpendicular := Vector2(-dir.y, dir.x)
+	var arc_offset := perpendicular * sin(time * arc_speed) * arc_strength
 
-	rotation = desired_direction.angle() + deg_to_rad(90)
+	var desired_direction := (dir + arc_offset * 0.01).normalized()
 
 	velocity = velocity.lerp(desired_direction * speed, turn_speed * delta)
 
