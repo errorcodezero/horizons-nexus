@@ -6,7 +6,6 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbrj1"]
 bg_color = Color(0.5982492, 0.5993335, 0.6093086, 1)
-draw_center = false
 
 [node name="DialogBox" type="Control" unique_id=1172218041 node_paths=PackedStringArray("dialog_display", "name_display", "continue_indicator", "portrait_display", "options_container", "option_template")]
 custom_minimum_size = Vector2(600, 150)
