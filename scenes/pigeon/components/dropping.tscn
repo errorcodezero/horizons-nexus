@@ -2,47 +2,53 @@
 
 [ext_resource type="Script" uid="uid://da0apdtnheesw" path="res://scenes/pigeon/components/dropping.gd" id="1_hat3c"]
 [ext_resource type="Texture2D" uid="uid://gxuh3fihbgxp" path="res://assets/weapons/bomb_dropping.png" id="2_olypu"]
+[ext_resource type="PackedScene" uid="uid://b37ckpfxlvojh" path="res://scenes/pigeon/components/hitbox.tscn" id="3_olypu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uqddf"]
 radius = 1.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ppm7r"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_hat3c"]
 atlas = ExtResource("2_olypu")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1vppj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_olypu"]
 atlas = ExtResource("2_olypu")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6hn3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppm7r"]
 atlas = ExtResource("2_olypu")
 region = Rect2(32, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lu75j"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vppj"]
 atlas = ExtResource("2_olypu")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_oeouh"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_hat3c"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hat3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olypu")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ppm7r")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1vppj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a6hn3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lu75j")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"default",
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_olypu"]
+radius = 5.0
+
 [node name="Dropping" type="CharacterBody2D" unique_id=612801966]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_hat3c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=373345682]
@@ -50,7 +56,7 @@ shape = SubResource("CircleShape2D_uqddf")
 disabled = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1356733738]
-sprite_frames = SubResource("SpriteFrames_oeouh")
+sprite_frames = SubResource("SpriteFrames_hat3c")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2033609801]
 zoom = Vector2(21.07, 21.07)
@@ -58,3 +64,7 @@ zoom = Vector2(21.07, 21.07)
 [node name="Fall Length" type="Timer" parent="." unique_id=1957222863]
 wait_time = 5.0
 one_shot = true
+
+[node name="Hitbox" parent="." unique_id=580185628 instance=ExtResource("3_olypu")]
+collision_mask = 1
+shape = SubResource("CircleShape2D_olypu")

@@ -9,7 +9,7 @@ extends CharacterBody2D
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var cooldown: Timer = $Cooldown
 @onready var spawner: Node2D = $Spawner
-@onready var health: health = $Health
+@onready var health: Health = $Health
 
 var input_linear: float
 var input_angular: float
@@ -21,6 +21,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			cooldown.start()
 
 func _physics_process(_delta: float) -> void:
+	if !Global.game_start:
+		return
 	input_linear = Input.get_axis("Slow Down", "Speed Up")
 	input_angular = Input.get_axis("Turn Left", "Turn Right")
 
@@ -45,5 +47,6 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 func _on_hitbox_hit(damage: int) -> void:
+	print("something")
 	if health.takeDamage(damage) == 0:
 		print("death")

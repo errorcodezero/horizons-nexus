@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var spawner: Node2D = $Spawner
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
 
-
 func _on_cooldown_timeout() -> void:
+	if !Global.game_start:
+		return
 	spawner.dropWeapon()

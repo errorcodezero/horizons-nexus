@@ -4,9 +4,11 @@ signal get_speed(velocity: float)
 signal score_changed(new_score: int)
 signal city_cleared
 
+
 var score: int = 0
 var buildings_in_level: int = 0
 var buildings_destroyed_count: int = 0
+var game_start: bool = true
 
 func register_building() -> void:
 	buildings_in_level += 1
