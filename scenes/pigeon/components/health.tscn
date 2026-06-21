@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c06dq1iwjqf2c"]
+
+[ext_resource type="Script" uid="uid://djqe10dol167n" path="res://scenes/pigeon/components/health.gd" id="1_f3j5c"]
+
+[node name="Health" type="Node2D" unique_id=2074618357]
+script = ExtResource("1_f3j5c")

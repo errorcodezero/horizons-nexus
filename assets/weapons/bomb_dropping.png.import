@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3yp4wtw1c3en"
-path="res://.godot/imported/pigeon-rest.png-6195dc101644144edc836a957937a3b8.ctex"
+uid="uid://gxuh3fihbgxp"
+path="res://.godot/imported/bomb_dropping.png-6a96c7e9b955ed7954f9bff7079648ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pigeon-rest.png"
-dest_files=["res://.godot/imported/pigeon-rest.png-6195dc101644144edc836a957937a3b8.ctex"]
+source_file="res://assets/weapons/bomb_dropping.png"
+dest_files=["res://.godot/imported/bomb_dropping.png-6a96c7e9b955ed7954f9bff7079648ba.ctex"]
 
 [params]
 

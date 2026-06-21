@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dodbqblomebee"
-path="res://.godot/imported/general-greg.png-b2752ff90efb37f0c3af6e61cffd8f0f.ctex"
+uid="uid://cgfxyqpha66dj"
+path="res://.godot/imported/fight_jet-sheet.png-ffa9086ff401fb8b426d67f238027f81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/general-greg.png"
-dest_files=["res://.godot/imported/general-greg.png-b2752ff90efb37f0c3af6e61cffd8f0f.ctex"]
+source_file="res://assets/charactor/fight_jet-sheet.png"
+dest_files=["res://.godot/imported/fight_jet-sheet.png-ffa9086ff401fb8b426d67f238027f81.ctex"]
 
 [params]
 

@@ -10,6 +10,7 @@ point_count = 3
 [node name="cardHolder" type="Control" unique_id=701951526]
 layout_mode = 3
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("1_rdri3")
 liftCurve = SubResource("Curve_507wa")
 

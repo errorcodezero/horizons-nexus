@@ -3,7 +3,19 @@
 [ext_resource type="Texture2D" uid="uid://d07kxum0lk8xn" path="res://assets/card_template.png" id="1_m273a"]
 [ext_resource type="Script" uid="uid://b0f0wluclee80" path="res://scenes/cards/cards.gd" id="2_6k1sf"]
 
-[node name="Cards" type="Sprite2D" unique_id=1193239210]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo2o2"]
+size = Vector2(750, 1050)
+
+[node name="Cards" type="CharacterBody2D" unique_id=1070882805]
 scale = Vector2(0.128, 0.128)
-texture = ExtResource("1_m273a")
+input_pickable = true
 script = ExtResource("2_6k1sf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1239078801]
+texture = ExtResource("1_m273a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1423102655]
+shape = SubResource("RectangleShape2D_jo2o2")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

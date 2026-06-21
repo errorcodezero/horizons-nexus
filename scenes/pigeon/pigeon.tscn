@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://bckcgnniowsvd"]
 
 [ext_resource type="Script" uid="uid://bkhmiq3ly7mxs" path="res://scenes/pigeon/pigeon.gd" id="1_h0uj3"]
-[ext_resource type="Texture2D" uid="uid://b3yp4wtw1c3en" path="res://assets/pigeon-rest.png" id="2_ga46t"]
-[ext_resource type="Script" uid="uid://dtogcjahrfrk5" path="res://scenes/pigeon/spawner.gd" id="3_762vb"]
+[ext_resource type="Texture2D" uid="uid://b3yp4wtw1c3en" path="res://assets/charactor/pigeon-rest.png" id="2_ga46t"]
+[ext_resource type="Script" uid="uid://dtogcjahrfrk5" path="res://scenes/pigeon/components/spawner.gd" id="3_762vb"]
+[ext_resource type="PackedScene" uid="uid://b37ckpfxlvojh" path="res://scenes/pigeon/components/hitbox.tscn" id="4_l4hwn"]
+[ext_resource type="PackedScene" uid="uid://c06dq1iwjqf2c" path="res://scenes/pigeon/components/health.tscn" id="5_kv707"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jyhfs"]
 radius = 7.0
 
 [node name="Pigeon" type="CharacterBody2D" unique_id=2018570939]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_h0uj3")
 max_speed = 500
 min_speed = 40
@@ -17,7 +21,7 @@ acceleration = 2
 position = Vector2(-0.5, 0)
 texture = ExtResource("2_ga46t")
 
-[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=1325646949]
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1325646949]
 shape = SubResource("CircleShape2D_jyhfs")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2098406741]
@@ -28,3 +32,9 @@ one_shot = true
 
 [node name="Spawner" type="Node2D" parent="." unique_id=1461187715]
 script = ExtResource("3_762vb")
+
+[node name="Hitbox" parent="." unique_id=580185628 instance=ExtResource("4_l4hwn")]
+
+[node name="Health" parent="." unique_id=2074618357 instance=ExtResource("5_kv707")]
+
+[connection signal="hit" from="Hitbox" to="." method="_on_hitbox_hit"]

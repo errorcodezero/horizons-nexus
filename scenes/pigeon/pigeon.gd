@@ -9,6 +9,7 @@ extends CharacterBody2D
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var cooldown: Timer = $Cooldown
 @onready var spawner: Node2D = $Spawner
+@onready var health: health = $Health
 
 var input_linear: float
 var input_angular: float
@@ -16,7 +17,7 @@ var input_angular: float
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("Action"):
 		if cooldown.is_stopped():
-			spawner.dropBomb(preload("res://scenes/pigeon/dropping.tscn"))
+			spawner.dropWeapon(preload("res://scenes/pigeon/components/dropping.tscn"))
 			cooldown.start()
 
 func _physics_process(_delta: float) -> void:
@@ -42,3 +43,7 @@ func _physics_process(_delta: float) -> void:
 		Global.emit_signal("get_speed", velocity.length())
  
 	move_and_slide()
+
+func _on_hitbox_hit(damage: int) -> void:
+	if health.takeDamage(damage) == 0:
+		print("death")

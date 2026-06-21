@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ckshr08yp3cab"]
+
+[ext_resource type="Script" uid="uid://b1bnd6fdl7yg7" path="res://bullet.gd" id="1_fwkvd"]
+[ext_resource type="Texture2D" uid="uid://cx0s3lx3ycank" path="res://assets/weapons/standard-bullets.png" id="2_whl8k"]
+[ext_resource type="PackedScene" uid="uid://b37ckpfxlvojh" path="res://scenes/pigeon/components/hitbox.tscn" id="3_pswid"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jo2o2"]
+radius = 1.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gomm7"]
+atlas = ExtResource("2_whl8k")
+region = Rect2(0, 0, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmtpu"]
+atlas = ExtResource("2_whl8k")
+region = Rect2(5, 0, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdlw8"]
+atlas = ExtResource("2_whl8k")
+region = Rect2(10, 0, 5, 5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_towf2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gomm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmtpu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdlw8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uqddf"]
+radius = 1.0
+
+[node name="Bullet" type="CharacterBody2D" unique_id=612801966]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_fwkvd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=373345682]
+shape = SubResource("CircleShape2D_jo2o2")
+disabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1356733738]
+sprite_frames = SubResource("SpriteFrames_towf2")
+frame_progress = 0.15337828
+
+[node name="Hitbox" parent="." unique_id=580185628 instance=ExtResource("3_pswid")]
+shape = SubResource("CircleShape2D_uqddf")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1659492399]
+
+[connection signal="body_entered" from="Hitbox" to="Hitbox" method="_on_body_entered"]
+[connection signal="hit" from="Hitbox" to="." method="_on_hitbox_hit"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

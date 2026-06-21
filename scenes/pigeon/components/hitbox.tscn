@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b37ckpfxlvojh"]
+
+[ext_resource type="Script" uid="uid://dusadwvlkvjtx" path="res://scenes/pigeon/components/hitbox.gd" id="1_oeouh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fwkvd"]
+radius = 1.0
+
+[node name="Hitbox" type="Area2D" unique_id=580185628]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_oeouh")
+shape = SubResource("CircleShape2D_fwkvd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=766296895]
+
+[connection signal="hit" from="." to="." method="_on_hit"]

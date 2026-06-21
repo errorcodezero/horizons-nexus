@@ -5,10 +5,11 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var fall_length: Timer = $"Fall Length"
-@onready var hitbox: Area2D = $Hitbox
+@onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
+
 
 func _ready() -> void:
-	hitbox.get_child(0).disabled = true
+	collision_shape_2d.disabled = true
 	
 func drop() -> void:
 	fall_length.start()
@@ -16,6 +17,6 @@ func drop() -> void:
 	animated_sprite_2d.play("default")
 	await fall_length.timeout
 	animated_sprite_2d.hide()
-	hitbox.get_child(0).disabled = false
+	collision_shape_2d.disabled = false
 	await get_tree().create_timer(4).timeout
 	queue_free()
