@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="SproutyDialogsDialogueData" format=3 uid="uid://qp1saw0krgqd"]
+
+[ext_resource type="Script" uid="uid://cbjdca3iwlx36" path="res://addons/sprouty_dialogs/resources/dialogue_data.gd" id="1_lbrj1"]
+
+[resource]
+script = ExtResource("1_lbrj1")
+graph_data = {
+"SF": {
+"dialogue_node_1": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "SF_DIALOG_1",
+"node_index": 1,
+"node_type": "dialogue_node",
+"offset": Vector2(740, -107.25001),
+"portrait": "Idle",
+"size": Vector2(422.0003, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_2"]
+},
+"dialogue_node_2": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "SF_DIALOG_2",
+"node_index": 2,
+"node_type": "dialogue_node",
+"offset": Vector2(1480, -120),
+"portrait": "Idle",
+"size": Vector2(422.00183, 681),
+"to_dialog": "",
+"to_node": ["dialogue_node_3"]
+},
+"dialogue_node_3": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "SF_DIALOG_3",
+"node_index": 3,
+"node_type": "dialogue_node",
+"offset": Vector2(2180, -120),
+"portrait": "default",
+"size": Vector2(416, 681),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_1": {
+"node_index": 1,
+"node_type": "start_node",
+"offset": Vector2(260, -40),
+"size": Vector2(351, 123.00003),
+"start_id": "SF",
+"to_dialog": "",
+"to_node": ["dialogue_node_1"]
+}
+}
+}
+dialogs = {
+"SF_DIALOG_1": {
+"default": "[font s=50.0][wave]CALLING[/wave][/font]",
+"en": ""
+},
+"SF_DIALOG_2": {
+"default": "Flock Fighter, look at that skyline. Smog, exhaust, Waymos, AI Ads... it’s a gray nightmare. You're diving straight through the marine layer for this one. Line up your crosshairs right over the Golden Gate Bridge and make it count.",
+"en": ""
+},
+"SF_DIALOG_3": {
+"default": "Hey, check it out... there's something on the horizon.",
+"en": ""
+}
+}
+characters = {
+"SF": {
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
+}
+}
