@@ -115,4 +115,4 @@ translation/localization/default_locale="en"
 translation/localization/locales=["en"]
 internal/variables={}
 internal/play_dialog_path="res://scenes/dialog/greg_speech.tres"
-internal/play_start_id="SF"
+internal/play_start_id="CAIRO"

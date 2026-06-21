@@ -2,10 +2,8 @@
 
 [ext_resource type="Script" uid="uid://calmi3b4mb6nj" path="res://scenes/characters/dialog_box.gd" id="1_gfq4p"]
 [ext_resource type="Texture2D" uid="uid://tkq4pamepmr5" path="res://addons/sprouty_dialogs/editor/icons/interactable/collapse-down.svg" id="2_gca2c"]
+[ext_resource type="Texture2D" uid="uid://c46c63hots15d" path="res://assets/text_box.png" id="2_yckbq"]
 [ext_resource type="Script" uid="uid://cdtkvrnke623v" path="res://addons/sprouty_dialogs/nodes/dialog_option.gd" id="3_yckbq"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbrj1"]
-bg_color = Color(0.5982492, 0.5993335, 0.6093086, 1)
 
 [node name="DialogBox" type="Control" unique_id=1172218041 node_paths=PackedStringArray("dialog_display", "name_display", "continue_indicator", "portrait_display", "options_container", "option_template")]
 custom_minimum_size = Vector2(600, 150)
@@ -33,7 +31,7 @@ portrait_display = NodePath("")
 options_container = NodePath("OptionsContainer")
 option_template = NodePath("OptionsContainer/DialogOption")
 
-[node name="DialogPanel" type="Panel" parent="." unique_id=764235526]
+[node name="DialogPanel" type="TextureRect" parent="." unique_id=1616275291]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -46,7 +44,7 @@ offset_right = 300.0
 offset_bottom = 362.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_lbrj1")
+texture = ExtResource("2_yckbq")
 
 [node name="MarginContainer" type="MarginContainer" parent="DialogPanel" unique_id=209287566]
 layout_mode = 1
@@ -57,10 +55,10 @@ offset_top = 2.0
 offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 10
+theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_right = 13
+theme_override_constants/margin_bottom = 30
 
 [node name="DialogContainer" type="VBoxContainer" parent="DialogPanel/MarginContainer" unique_id=1882686376]
 layout_mode = 2

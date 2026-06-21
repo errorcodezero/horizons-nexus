@@ -5,6 +5,53 @@
 [resource]
 script = ExtResource("1_lbrj1")
 graph_data = {
+"CAIRO": {
+"dialogue_node_4": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "CAIRO_DIALOG_4",
+"node_index": 4,
+"node_type": "dialogue_node",
+"offset": Vector2(760, 680),
+"portrait": "Idle",
+"size": Vector2(422.0003, 681.0005),
+"to_dialog": "",
+"to_node": ["dialogue_node_5"]
+},
+"dialogue_node_5": {
+"char_expand": true,
+"character": "General Greg",
+"dialog_key": "CAIRO_DIALOG_5",
+"node_index": 5,
+"node_type": "dialogue_node",
+"offset": Vector2(1500, 680),
+"portrait": "Idle",
+"size": Vector2(422.00018, 681.0005),
+"to_dialog": "",
+"to_node": ["dialogue_node_6"]
+},
+"dialogue_node_6": {
+"char_expand": true,
+"character": "Random Guy",
+"dialog_key": "CAIRO_DIALOG_6",
+"node_index": 6,
+"node_type": "dialogue_node",
+"offset": Vector2(2180, 680),
+"portrait": "default",
+"size": Vector2(416.00012, 640),
+"to_dialog": "",
+"to_node": ["END"]
+},
+"start_node_2": {
+"node_index": 2,
+"node_type": "start_node",
+"offset": Vector2(255.60158, 695.2276),
+"size": Vector2(351, 123.00006),
+"start_id": "CAIRO",
+"to_dialog": "",
+"to_node": ["dialogue_node_4"]
+}
+},
 "SF": {
 "dialogue_node_1": {
 "char_expand": true,
@@ -26,7 +73,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(1480, -120),
 "portrait": "Idle",
-"size": Vector2(422.00183, 681),
+"size": Vector2(422.002, 681),
 "to_dialog": "",
 "to_node": ["dialogue_node_3"]
 },
@@ -38,7 +85,7 @@ graph_data = {
 "node_type": "dialogue_node",
 "offset": Vector2(2180, -120),
 "portrait": "default",
-"size": Vector2(416, 681),
+"size": Vector2(416.0006, 681),
 "to_dialog": "",
 "to_node": ["END"]
 },
@@ -46,7 +93,7 @@ graph_data = {
 "node_index": 1,
 "node_type": "start_node",
 "offset": Vector2(260, -40),
-"size": Vector2(351, 123.00003),
+"size": Vector2(351.00012, 123.00006),
 "start_id": "SF",
 "to_dialog": "",
 "to_node": ["dialogue_node_1"]
@@ -54,12 +101,24 @@ graph_data = {
 }
 }
 dialogs = {
+"CAIRO_DIALOG_4": {
+"default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
+"en": ""
+},
+"CAIRO_DIALOG_5": {
+"default": "They think they can choke the Nile with plastic and dust? Not on my watch. Watch the desert wind currents on your approach, soldier. Target the historic Pyramids of Giza.",
+"en": ""
+},
+"CAIRO_DIALOG_6": {
+"default": "هناك شيء يلوح في الأفق",
+"en": ""
+},
 "SF_DIALOG_1": {
-"default": "[font s=50.0][wave]CALLING[/wave][/font]",
+"default": "[font s=40.0][wave]CALLING[/wave][/font][/color]",
 "en": ""
 },
 "SF_DIALOG_2": {
-"default": "Flock Fighter, look at that skyline. Smog, exhaust, Waymos, AI Ads... it’s a gray nightmare. You're diving straight through the marine layer for this one. Line up your crosshairs right over the Golden Gate Bridge and make it count.",
+"default": "Flock Fighter, look at that skyline. Smog, exhaust, Waymos, AI Ads... it’s a gray nightmare. You're diving straight through the fog for this one. Line up your crosshairs right over the [color=c0362d]Golden Gate Bridge[/color] and make it count.",
 "en": ""
 },
 "SF_DIALOG_3": {
@@ -68,6 +127,10 @@ dialogs = {
 }
 }
 characters = {
+"CAIRO": {
+"General Greg": 3978483301354737234,
+"Random Guy": 2515394185694124763
+},
 "SF": {
 "General Greg": 3978483301354737234,
 "Random Guy": 2515394185694124763
